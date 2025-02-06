@@ -20,12 +20,10 @@
         <!-- Product Image -->
         <div class="col-span-3">
           <img 
-            v-if="product.image_url"
             :src="product.image_url" 
             :alt="product.name"
             class="w-full aspect-square object-cover border border-gray-200"
           >
-          <div v-else class="w-full aspect-square bg-gray-200 animate-pulse"></div>
         </div>
 
         <!-- Product Information -->
@@ -179,31 +177,6 @@
               </div>
             </div>
           </NuxtLink>
-        </div>
-      </div>
-    </div>
-    <div v-else class="max-w-5xl mx-auto px-4 py-8">
-      <div class="bg-white border border-gray-100 p-8 animate-pulse">
-        <div class="flex items-start justify-between mb-4">
-          <div class="w-48 h-6 bg-gray-200 rounded"></div>
-          <div class="w-24 h-6 bg-gray-200 rounded"></div>
-        </div>
-        <div class="grid grid-cols-12 gap-8">
-          <div class="col-span-3">
-            <div class="w-full aspect-square bg-gray-200 rounded"></div>
-          </div>
-          <div class="col-span-9 space-y-4">
-            <div class="grid grid-cols-3 gap-4 pb-6 border-b border-gray-200">
-              <div class="w-24 h-4 bg-gray-200 rounded"></div>
-              <div class="w-24 h-4 bg-gray-200 rounded"></div>
-              <div class="w-24 h-4 bg-gray-200 rounded"></div>
-            </div>
-            <div class="w-64 h-4 bg-gray-200 rounded"></div>
-            <div class="w-full h-4 bg-gray-200 rounded"></div>
-            <div class="w-48 h-4 bg-gray-200 rounded"></div>
-            <div class="w-32 h-4 bg-gray-200 rounded"></div>
-            <div class="w-24 h-4 bg-gray-200 rounded"></div>
-          </div>
         </div>
       </div>
     </div>
